@@ -18,7 +18,7 @@ class AuthViewController: UIViewController {
     let googleButton = UIButton(title: "Google", titleColor: .black, backgroundColor: .white, isShadow: true)
     let emailButton = UIButton(title: "Email", titleColor: .white, backgroundColor: .buttonDark())
     let loginButton = UIButton(title: "Login", titleColor: .buttonRed(), backgroundColor: .white, isShadow: true)
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +26,10 @@ class AuthViewController: UIViewController {
         setupConstraints()
     }
     
+}
+
+// MARK: - Setup constraints
+extension AuthViewController {
     private func setupConstraints() {
         let googleView = ButtonFormView(label: googleLabel, button: googleButton)
         let emailView = ButtonFormView(label: emailLabel, button: emailButton)
@@ -41,15 +45,14 @@ class AuthViewController: UIViewController {
         NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-
+  
             stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
     }
-    
 }
 
-#Preview("ViewController") {
+#Preview("AuthViewController") {
     AuthViewController()
 }
