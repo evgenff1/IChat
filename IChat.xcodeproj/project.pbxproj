@@ -20,6 +20,9 @@
 		271A607F2BBEF8D900956B9D /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A607E2BBEF8D900956B9D /* SetupProfileViewController.swift */; };
 		271A60812BBEF8FD00956B9D /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60802BBEF8FD00956B9D /* AddPhotoView.swift */; };
 		271A60832BBF21F900956B9D /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60822BBF21F900956B9D /* SegmentedControl + Extension.swift */; };
+		271A60852BBFA81D00956B9D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60842BBFA81D00956B9D /* ListViewController.swift */; };
+		271A60892BBFA98100956B9D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60882BBFA98100956B9D /* MainTabBarController.swift */; };
+		271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */; };
 		27AC82FE2BBC79160051F8C3 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */; };
 		27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */; };
 		27AC83022BBC8D4E0051F8C3 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */; };
@@ -43,6 +46,9 @@
 		271A607E2BBEF8D900956B9D /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		271A60802BBEF8FD00956B9D /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		271A60822BBF21F900956B9D /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
+		271A60842BBFA81D00956B9D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		271A60882BBFA98100956B9D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -82,10 +88,8 @@
 			children = (
 				2706476A2BBAB67400A8CCE7 /* AppDelegate.swift */,
 				2706476C2BBAB67400A8CCE7 /* SceneDelegate.swift */,
-				2706476E2BBAB67400A8CCE7 /* AuthViewController.swift */,
-				271A60782BBD6D3900956B9D /* SignUpViewController.swift */,
-				271A607C2BBD926900956B9D /* LoginViewController.swift */,
-				271A607E2BBEF8D900956B9D /* SetupProfileViewController.swift */,
+				271A60872BBFA95100956B9D /* Controllers */,
+				271A60862BBFA92100956B9D /* SignIn&Auth */,
 				271A60732BBD0CC100956B9D /* Extensions */,
 				270647732BBAB67700A8CCE7 /* Assets.xcassets */,
 				270647752BBAB67700A8CCE7 /* LaunchScreen.storyboard */,
@@ -103,6 +107,27 @@
 				27AC83072BBD0C4F0051F8C3 /* UIKit */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		271A60862BBFA92100956B9D /* SignIn&Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2706476E2BBAB67400A8CCE7 /* AuthViewController.swift */,
+				271A60782BBD6D3900956B9D /* SignUpViewController.swift */,
+				271A607C2BBD926900956B9D /* LoginViewController.swift */,
+				271A607E2BBEF8D900956B9D /* SetupProfileViewController.swift */,
+			);
+			path = "SignIn&Auth";
+			sourceTree = "<group>";
+		};
+		271A60872BBFA95100956B9D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				271A60882BBFA98100956B9D /* MainTabBarController.swift */,
+				271A60842BBFA81D00956B9D /* ListViewController.swift */,
+				271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		27AC83072BBD0C4F0051F8C3 /* UIKit */ = {
@@ -189,9 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271A60852BBFA81D00956B9D /* ListViewController.swift in Sources */,
 				271A607B2BBD6DAC00956B9D /* OneLineTextField.swift in Sources */,
+				271A60892BBFA98100956B9D /* MainTabBarController.swift in Sources */,
 				271A60792BBD6D3900956B9D /* SignUpViewController.swift in Sources */,
 				27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */,
+				271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */,
 				2706476F2BBAB67400A8CCE7 /* AuthViewController.swift in Sources */,
 				271A607F2BBEF8D900956B9D /* SetupProfileViewController.swift in Sources */,
 				27AC83042BBC8F170051F8C3 /* Label + Extension.swift in Sources */,
