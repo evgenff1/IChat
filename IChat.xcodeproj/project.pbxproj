@@ -35,6 +35,7 @@
 		27B2405C2BC2706300B37C72 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B2405B2BC2706300B37C72 /* waitingChats.json */; };
 		27B2405E2BC2727300B37C72 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2405D2BC2727300B37C72 /* Bundle-Decodable.swift */; };
 		27E752392BC5128A006E7CC0 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E752382BC5128A006E7CC0 /* SelfConfiguringCell.swift */; };
+		27E7523B2BC5D68D006E7CC0 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		27B2405B2BC2706300B37C72 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		27B2405D2BC2727300B37C72 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		27E752382BC5128A006E7CC0 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				271A60882BBFA98100956B9D /* MainTabBarController.swift */,
 				271A60842BBFA81D00956B9D /* ListViewController.swift */,
+				27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */,
 				271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */,
 				2743957D2BC3F59B00431863 /* Cell */,
 			);
@@ -255,6 +258,7 @@
 			files = (
 				271A60852BBFA81D00956B9D /* ListViewController.swift in Sources */,
 				271A607B2BBD6DAC00956B9D /* OneLineTextField.swift in Sources */,
+				27E7523B2BC5D68D006E7CC0 /* SectionHeader.swift in Sources */,
 				274395812BC4391400431863 /* GradientView.swift in Sources */,
 				271A60892BBFA98100956B9D /* MainTabBarController.swift in Sources */,
 				271A60792BBD6D3900956B9D /* SignUpViewController.swift in Sources */,
