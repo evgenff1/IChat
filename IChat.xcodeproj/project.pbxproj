@@ -36,6 +36,9 @@
 		27B2405E2BC2727300B37C72 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2405D2BC2727300B37C72 /* Bundle-Decodable.swift */; };
 		27E752392BC5128A006E7CC0 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E752382BC5128A006E7CC0 /* SelfConfiguringCell.swift */; };
 		27E7523B2BC5D68D006E7CC0 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */; };
+		27E7523D2BC65ECE006E7CC0 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 27E7523C2BC65ECE006E7CC0 /* users.json */; };
+		27E752402BC6651B006E7CC0 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7523F2BC6651B006E7CC0 /* MUser.swift */; };
+		27E752422BC66530006E7CC0 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E752412BC66530006E7CC0 /* MChat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		27B2405D2BC2727300B37C72 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		27E752382BC5128A006E7CC0 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		27E7523C2BC65ECE006E7CC0 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		27E7523F2BC6651B006E7CC0 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		27E752412BC66530006E7CC0 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 			children = (
 				2706476A2BBAB67400A8CCE7 /* AppDelegate.swift */,
 				2706476C2BBAB67400A8CCE7 /* SceneDelegate.swift */,
+				27E752442BC665C5006E7CC0 /* Models */,
 				271A60872BBFA95100956B9D /* Controllers */,
 				271A60862BBFA92100956B9D /* SignIn&Auth */,
 				27E752372BC51265006E7CC0 /* Protocols */,
@@ -144,9 +151,9 @@
 			children = (
 				271A60882BBFA98100956B9D /* MainTabBarController.swift */,
 				271A60842BBFA81D00956B9D /* ListViewController.swift */,
-				27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */,
 				271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */,
 				2743957D2BC3F59B00431863 /* Cell */,
+				27E7523E2BC65EF8006E7CC0 /* Header */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +179,7 @@
 				271A60822BBF21F900956B9D /* SegmentedControl + Extension.swift */,
 				27B240592BC2704D00B37C72 /* activeChats.json */,
 				27B2405B2BC2706300B37C72 /* waitingChats.json */,
+				27E7523C2BC65ECE006E7CC0 /* users.json */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -182,6 +190,23 @@
 				27E752382BC5128A006E7CC0 /* SelfConfiguringCell.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		27E7523E2BC65EF8006E7CC0 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		27E752442BC665C5006E7CC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27E7523F2BC6651B006E7CC0 /* MUser.swift */,
+				27E752412BC66530006E7CC0 /* MChat.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E7523D2BC65ECE006E7CC0 /* users.json in Resources */,
 				270647772BBAB67700A8CCE7 /* LaunchScreen.storyboard in Resources */,
 				27B2405A2BC2704E00B37C72 /* activeChats.json in Resources */,
 				270647742BBAB67700A8CCE7 /* Assets.xcassets in Resources */,
@@ -256,12 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E752422BC66530006E7CC0 /* MChat.swift in Sources */,
 				271A60852BBFA81D00956B9D /* ListViewController.swift in Sources */,
 				271A607B2BBD6DAC00956B9D /* OneLineTextField.swift in Sources */,
 				27E7523B2BC5D68D006E7CC0 /* SectionHeader.swift in Sources */,
 				274395812BC4391400431863 /* GradientView.swift in Sources */,
 				271A60892BBFA98100956B9D /* MainTabBarController.swift in Sources */,
 				271A60792BBD6D3900956B9D /* SignUpViewController.swift in Sources */,
+				27E752402BC6651B006E7CC0 /* MUser.swift in Sources */,
 				2743957F2BC3F5BA00431863 /* ActiveChatCell.swift in Sources */,
 				27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */,
 				271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */,
