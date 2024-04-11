@@ -26,6 +26,8 @@
 		271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */; };
 		2743957F2BC3F5BA00431863 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2743957E2BC3F5BA00431863 /* ActiveChatCell.swift */; };
 		274395812BC4391400431863 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274395802BC4391400431863 /* GradientView.swift */; };
+		27920E402BC7BBFF00DDE6EA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */; };
+		27920E422BC7BC1D00DDE6EA /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */; };
 		27AC82FE2BBC79160051F8C3 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */; };
 		27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */; };
 		27AC83022BBC8D4E0051F8C3 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */; };
@@ -63,6 +65,8 @@
 		271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		2743957E2BC3F5BA00431863 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		274395802BC4391400431863 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 			children = (
 				2743957E2BC3F5BA00431863 /* ActiveChatCell.swift */,
 				27026FFB2BC463B5001A9088 /* WaitingChatCell.swift */,
+				27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */,
+				27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */,
 				27AC83032BBC8F170051F8C3 /* Label + Extension.swift */,
 				27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */,
 				27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */,
@@ -302,6 +308,8 @@
 				2706476B2BBAB67400A8CCE7 /* AppDelegate.swift in Sources */,
 				27AC83062BBC8F3F0051F8C3 /* UIImageView + Extension.swift in Sources */,
 				271A60832BBF21F900956B9D /* SegmentedControl + Extension.swift in Sources */,
+				27920E402BC7BBFF00DDE6EA /* UserCell.swift in Sources */,
+				27920E422BC7BC1D00DDE6EA /* UIViewController + Extension.swift in Sources */,
 				27E752392BC5128A006E7CC0 /* SelfConfiguringCell.swift in Sources */,
 				27026FFC2BC463B5001A9088 /* WaitingChatCell.swift in Sources */,
 				27AC83022BBC8D4E0051F8C3 /* UIColor + Extension.swift in Sources */,
