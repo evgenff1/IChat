@@ -28,6 +28,7 @@
 		274395812BC4391400431863 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274395802BC4391400431863 /* GradientView.swift */; };
 		27920E402BC7BBFF00DDE6EA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */; };
 		27920E422BC7BC1D00DDE6EA /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */; };
+		27920E442BC92EDE00DDE6EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E432BC92EDE00DDE6EA /* ProfileViewController.swift */; };
 		27AC82FE2BBC79160051F8C3 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */; };
 		27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */; };
 		27AC83022BBC8D4E0051F8C3 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */; };
@@ -67,6 +68,7 @@
 		274395802BC4391400431863 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		27920E432BC92EDE00DDE6EA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -135,6 +137,9 @@
 				274395802BC4391400431863 /* GradientView.swift */,
 				27B2405D2BC2727300B37C72 /* Bundle-Decodable.swift */,
 				27AC83072BBD0C4F0051F8C3 /* UIKit */,
+				27B240592BC2704D00B37C72 /* activeChats.json */,
+				27B2405B2BC2706300B37C72 /* waitingChats.json */,
+				27E7523C2BC65ECE006E7CC0 /* users.json */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				271A60882BBFA98100956B9D /* MainTabBarController.swift */,
 				271A60842BBFA81D00956B9D /* ListViewController.swift */,
 				271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */,
+				27920E432BC92EDE00DDE6EA /* ProfileViewController.swift */,
 				2743957D2BC3F59B00431863 /* Cell */,
 				27E7523E2BC65EF8006E7CC0 /* Header */,
 			);
@@ -183,9 +189,6 @@
 				27AC83052BBC8F3F0051F8C3 /* UIImageView + Extension.swift */,
 				271A60762BBD129900956B9D /* StackView + Extension.swift */,
 				271A60822BBF21F900956B9D /* SegmentedControl + Extension.swift */,
-				27B240592BC2704D00B37C72 /* activeChats.json */,
-				27B2405B2BC2706300B37C72 /* waitingChats.json */,
-				27E7523C2BC65ECE006E7CC0 /* users.json */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */,
 				271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */,
 				2706476F2BBAB67400A8CCE7 /* AuthViewController.swift in Sources */,
+				27920E442BC92EDE00DDE6EA /* ProfileViewController.swift in Sources */,
 				27B2405E2BC2727300B37C72 /* Bundle-Decodable.swift in Sources */,
 				271A607F2BBEF8D900956B9D /* SetupProfileViewController.swift in Sources */,
 				27AC83042BBC8F170051F8C3 /* Label + Extension.swift in Sources */,
