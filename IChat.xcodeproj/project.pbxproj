@@ -29,6 +29,8 @@
 		27920E402BC7BBFF00DDE6EA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */; };
 		27920E422BC7BC1D00DDE6EA /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */; };
 		27920E442BC92EDE00DDE6EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E432BC92EDE00DDE6EA /* ProfileViewController.swift */; };
+		27920E742BCAB09300DDE6EA /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E732BCAB09200DDE6EA /* InsertableTextField.swift */; };
+		27920E762BCAB16700DDE6EA /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E752BCAB16700DDE6EA /* UIView + Extension.swift */; };
 		27AC82FE2BBC79160051F8C3 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */; };
 		27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */; };
 		27AC83022BBC8D4E0051F8C3 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */; };
@@ -69,6 +71,8 @@
 		27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		27920E432BC92EDE00DDE6EA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		27920E732BCAB09200DDE6EA /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
+		27920E752BCAB16700DDE6EA /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				271A60802BBEF8FD00956B9D /* AddPhotoView.swift */,
+				27920E732BCAB09200DDE6EA /* InsertableTextField.swift */,
 				271A60742BBD0E3700956B9D /* ButtonFormView.swift */,
 				271A607A2BBD6DAC00956B9D /* OneLineTextField.swift */,
 				274395802BC4391400431863 /* GradientView.swift */,
@@ -183,6 +188,7 @@
 			children = (
 				27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */,
 				27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */,
+				27920E752BCAB16700DDE6EA /* UIView + Extension.swift */,
 				27AC83032BBC8F170051F8C3 /* Label + Extension.swift */,
 				27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */,
 				27AC83012BBC8D4E0051F8C3 /* UIColor + Extension.swift */,
@@ -301,6 +307,7 @@
 				27E752402BC6651B006E7CC0 /* MUser.swift in Sources */,
 				2743957F2BC3F5BA00431863 /* ActiveChatCell.swift in Sources */,
 				27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */,
+				27920E742BCAB09300DDE6EA /* InsertableTextField.swift in Sources */,
 				271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */,
 				2706476F2BBAB67400A8CCE7 /* AuthViewController.swift in Sources */,
 				27920E442BC92EDE00DDE6EA /* ProfileViewController.swift in Sources */,
@@ -310,6 +317,7 @@
 				271A60752BBD0E3700956B9D /* ButtonFormView.swift in Sources */,
 				271A60812BBEF8FD00956B9D /* AddPhotoView.swift in Sources */,
 				2706476B2BBAB67400A8CCE7 /* AppDelegate.swift in Sources */,
+				27920E762BCAB16700DDE6EA /* UIView + Extension.swift in Sources */,
 				27AC83062BBC8F3F0051F8C3 /* UIImageView + Extension.swift in Sources */,
 				271A60832BBF21F900956B9D /* SegmentedControl + Extension.swift in Sources */,
 				27920E402BC7BBFF00DDE6EA /* UserCell.swift in Sources */,
