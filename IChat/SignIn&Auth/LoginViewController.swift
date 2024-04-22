@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol AuthNavigatingDelegate: AnyObject {
+    func toLoginVC()
+    func toSignUpVC()
+}
+
 class LoginViewController: UIViewController {
     
     let welcomeLabel = UILabel(text: "Welcome back!", font: .avenir26())
@@ -21,13 +26,15 @@ class LoginViewController: UIViewController {
     let emailTextField = OneLineTextField(font: .avenir20())
     let passwordTextField = OneLineTextField(font: .avenir20())
     let loginButton = UIButton(title: "Login", titleColor: .white, backgroundColor: .buttonDark())
-    let signInButton: UIButton = {
+    let signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.buttonRed(), for: .normal)
         button.titleLabel?.font = .avenir20()
         return button
     }()
+    
+    weak var delegate: AuthNavigatingDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +44,7 @@ class LoginViewController: UIViewController {
         setupConstraints()
         
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
     
     @objc private func loginButtonTapped() {
@@ -44,10 +52,18 @@ class LoginViewController: UIViewController {
                                  password: passwordTextField.text!) { (result) in
                                     switch result {
                                     case .success(_):
-                                        self.showAlert(with: "Успешно!", and: "Вы авторизованы!")
+                                        self.showAlert(with: "Успешно!", and: "Вы авторизованы!") {
+                                            self.present(MainTabBarController(), animated: true, completion: nil)
+                                        }
                                     case .failure(let error):
                                         self.showAlert(with: "Ошибка!", and: error.localizedDescription)
                                     }
+        }
+    }
+    
+    @objc private func signUpButtonTapped() {
+        dismiss(animated: true) {
+            self.delegate?.toSignUpVC()
         }
     }
 }
@@ -74,8 +90,8 @@ extension LoginViewController {
                                     axis: .vertical,
                                     spacing: 40)
         
-        signInButton.contentHorizontalAlignment = .leading
-        let bottomStackView = UIStackView(arrangedSubviews: [needAnAccountLabel, signInButton],
+        signUpButton.contentHorizontalAlignment = .leading
+        let bottomStackView = UIStackView(arrangedSubviews: [needAnAccountLabel, signUpButton],
                                           axis: .horizontal,
                                           spacing: 10)
         bottomStackView.alignment = .firstBaseline
@@ -89,14 +105,14 @@ extension LoginViewController {
         view.addSubview(bottomStackView)
         
         NSLayoutConstraint.activate([
-            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 140),
             welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
    
             stackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 60),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
  
-            bottomStackView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 40),
+            bottomStackView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
             bottomStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             bottomStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])

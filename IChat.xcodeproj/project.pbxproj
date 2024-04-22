@@ -26,6 +26,8 @@
 		271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */; };
 		273F01FF2BD54920008A55F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273F01FE2BD54920008A55F6 /* GoogleService-Info.plist */; };
 		273F02022BD5507D008A55F6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F02012BD5507D008A55F6 /* AuthService.swift */; };
+		273F02052BD69E48008A55F6 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F02042BD69E48008A55F6 /* Validators.swift */; };
+		273F02072BD69E63008A55F6 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F02062BD69E63008A55F6 /* AuthError.swift */; };
 		2743957F2BC3F5BA00431863 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2743957E2BC3F5BA00431863 /* ActiveChatCell.swift */; };
 		274395812BC4391400431863 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274395802BC4391400431863 /* GradientView.swift */; };
 		27920E402BC7BBFF00DDE6EA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */; };
@@ -72,6 +74,8 @@
 		271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		273F01FE2BD54920008A55F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		273F02012BD5507D008A55F6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		273F02042BD69E48008A55F6 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		273F02062BD69E63008A55F6 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		2743957E2BC3F5BA00431863 /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		274395802BC4391400431863 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		27920E3F2BC7BBFF00DDE6EA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				271A60862BBFA92100956B9D /* SignIn&Auth */,
 				27E752372BC51265006E7CC0 /* Protocols */,
 				271A60732BBD0CC100956B9D /* Extensions */,
+				273F02032BD69E24008A55F6 /* Helpers */,
 				270647732BBAB67700A8CCE7 /* Assets.xcassets */,
 				270647752BBAB67700A8CCE7 /* LaunchScreen.storyboard */,
 				270647782BBAB67700A8CCE7 /* Info.plist */,
@@ -195,6 +200,15 @@
 				273F02012BD5507D008A55F6 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		273F02032BD69E24008A55F6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				273F02042BD69E48008A55F6 /* Validators.swift */,
+				273F02062BD69E63008A55F6 /* AuthError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2743957D2BC3F59B00431863 /* Cell */ = {
@@ -389,8 +403,10 @@
 				27E7523B2BC5D68D006E7CC0 /* SectionHeader.swift in Sources */,
 				274395812BC4391400431863 /* GradientView.swift in Sources */,
 				271A60892BBFA98100956B9D /* MainTabBarController.swift in Sources */,
+				273F02072BD69E63008A55F6 /* AuthError.swift in Sources */,
 				271A60792BBD6D3900956B9D /* SignUpViewController.swift in Sources */,
 				27E752402BC6651B006E7CC0 /* MUser.swift in Sources */,
+				273F02052BD69E48008A55F6 /* Validators.swift in Sources */,
 				2743957F2BC3F5BA00431863 /* ActiveChatCell.swift in Sources */,
 				27AC83002BBC8C540051F8C3 /* UIFont + Extension.swift in Sources */,
 				27920E742BCAB09300DDE6EA /* InsertableTextField.swift in Sources */,

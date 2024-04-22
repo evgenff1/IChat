@@ -31,6 +31,9 @@ class AuthViewController: UIViewController {
         
         emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        
+        signUpVC.delegate = self
+        loginVC.delegate = self
     }
     
     @objc private func emailButtonTapped() {
@@ -58,13 +61,23 @@ extension AuthViewController {
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 140),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
   
-            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160),
+            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 100),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
+    }
+}
+
+extension AuthViewController: AuthNavigatingDelegate {
+    func toLoginVC() {
+        present(loginVC, animated: true, completion: nil)
+    }
+    
+    func toSignUpVC() {
+        present(signUpVC, animated: true, completion: nil)
     }
 }
 
