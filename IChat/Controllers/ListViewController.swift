@@ -28,6 +28,18 @@ class ListViewController: UIViewController {
     var dataSource: UICollectionViewDiffableDataSource<Section, MChat>?
     var collectionView: UICollectionView!
     
+    private let currentUser: MUser
+       
+       init(currentUser: MUser) {
+           self.currentUser = currentUser
+           super.init(nibName: nil, bundle: nil)
+           title = currentUser.username
+       }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -178,8 +190,4 @@ extension ListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
     }
-}
-
-#Preview {
-    MainTabBarController()
 }
