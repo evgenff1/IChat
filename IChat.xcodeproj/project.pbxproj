@@ -24,7 +24,7 @@
 		271A60852BBFA81D00956B9D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60842BBFA81D00956B9D /* ListViewController.swift */; };
 		271A60892BBFA98100956B9D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60882BBFA98100956B9D /* MainTabBarController.swift */; };
 		271A608B2BBFA9CA00956B9D /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */; };
-		273F01FF2BD54920008A55F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273F01FE2BD54920008A55F6 /* GoogleService-Info.plist */; };
+		27353D3E2BDB98C600269BB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27353D3D2BDB98C600269BB2 /* GoogleService-Info.plist */; };
 		273F02022BD5507D008A55F6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F02012BD5507D008A55F6 /* AuthService.swift */; };
 		273F02052BD69E48008A55F6 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F02042BD69E48008A55F6 /* Validators.swift */; };
 		273F02072BD69E63008A55F6 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F02062BD69E63008A55F6 /* AuthError.swift */; };
@@ -46,6 +46,7 @@
 		27B2405A2BC2704E00B37C72 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B240592BC2704D00B37C72 /* activeChats.json */; };
 		27B2405C2BC2706300B37C72 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 27B2405B2BC2706300B37C72 /* waitingChats.json */; };
 		27B2405E2BC2727300B37C72 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B2405D2BC2727300B37C72 /* Bundle-Decodable.swift */; };
+		27C37FFF2BDE7D97006B0173 /* UIAplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C37FFE2BDE7D97006B0173 /* UIAplication + Extension.swift */; };
 		27DDF7E52BCBAA4D00B6B68E /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DDF7E42BCBAA4C00B6B68E /* ChatRequestViewController.swift */; };
 		27E752392BC5128A006E7CC0 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E752382BC5128A006E7CC0 /* SelfConfiguringCell.swift */; };
 		27E7523B2BC5D68D006E7CC0 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */; };
@@ -75,7 +76,7 @@
 		271A60842BBFA81D00956B9D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		271A60882BBFA98100956B9D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		271A608A2BBFA9CA00956B9D /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
-		273F01FE2BD54920008A55F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27353D3D2BDB98C600269BB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		273F02012BD5507D008A55F6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		273F02042BD69E48008A55F6 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		273F02062BD69E63008A55F6 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		27B240592BC2704D00B37C72 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
 		27B2405B2BC2706300B37C72 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
 		27B2405D2BC2727300B37C72 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		27C37FFE2BDE7D97006B0173 /* UIAplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAplication + Extension.swift"; sourceTree = "<group>"; };
 		27DDF7E42BCBAA4C00B6B68E /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
 		27E752382BC5128A006E7CC0 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		27E7523A2BC5D68D006E7CC0 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
@@ -152,7 +154,7 @@
 				270647732BBAB67700A8CCE7 /* Assets.xcassets */,
 				270647752BBAB67700A8CCE7 /* LaunchScreen.storyboard */,
 				270647782BBAB67700A8CCE7 /* Info.plist */,
-				273F01FE2BD54920008A55F6 /* GoogleService-Info.plist */,
+				27353D3D2BDB98C600269BB2 /* GoogleService-Info.plist */,
 			);
 			path = IChat;
 			sourceTree = "<group>";
@@ -234,6 +236,7 @@
 			children = (
 				27AC82FD2BBC79160051F8C3 /* UIButton + Extension.swift */,
 				27920E412BC7BC1D00DDE6EA /* UIViewController + Extension.swift */,
+				27C37FFE2BDE7D97006B0173 /* UIAplication + Extension.swift */,
 				27920E752BCAB16700DDE6EA /* UIView + Extension.swift */,
 				27AC83032BBC8F170051F8C3 /* Label + Extension.swift */,
 				27AC82FF2BBC8C540051F8C3 /* UIFont + Extension.swift */,
@@ -353,7 +356,7 @@
 				27B2405A2BC2704E00B37C72 /* activeChats.json in Resources */,
 				270647742BBAB67700A8CCE7 /* Assets.xcassets in Resources */,
 				27B2405C2BC2706300B37C72 /* waitingChats.json in Resources */,
-				273F01FF2BD54920008A55F6 /* GoogleService-Info.plist in Resources */,
+				27353D3E2BDB98C600269BB2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +412,7 @@
 				27E752422BC66530006E7CC0 /* MChat.swift in Sources */,
 				271A60852BBFA81D00956B9D /* ListViewController.swift in Sources */,
 				271A607B2BBD6DAC00956B9D /* OneLineTextField.swift in Sources */,
+				27C37FFF2BDE7D97006B0173 /* UIAplication + Extension.swift in Sources */,
 				27E7523B2BC5D68D006E7CC0 /* SectionHeader.swift in Sources */,
 				274395812BC4391400431863 /* GradientView.swift in Sources */,
 				271A60892BBFA98100956B9D /* MainTabBarController.swift in Sources */,
