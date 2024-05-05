@@ -16,6 +16,7 @@
 		27174B932BE40770004A67E7 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27174B922BE40770004A67E7 /* StorageService.swift */; };
 		27174B952BE408FF004A67E7 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27174B942BE408FF004A67E7 /* UIImage + Extension.swift */; };
 		27174B972BE4C76E004A67E7 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27174B962BE4C76E004A67E7 /* ListenerService.swift */; };
+		27174BB32BE7A198004A67E7 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27174BB22BE7A198004A67E7 /* MMessage.swift */; };
 		271A60752BBD0E3700956B9D /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60742BBD0E3700956B9D /* ButtonFormView.swift */; };
 		271A60772BBD129900956B9D /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60762BBD129900956B9D /* StackView + Extension.swift */; };
 		271A60792BBD6D3900956B9D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271A60782BBD6D3900956B9D /* SignUpViewController.swift */; };
@@ -71,6 +72,7 @@
 		27174B922BE40770004A67E7 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		27174B942BE408FF004A67E7 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		27174B962BE4C76E004A67E7 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		27174BB22BE7A198004A67E7 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		271A60742BBD0E3700956B9D /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		271A60762BBD129900956B9D /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
 		271A60782BBD6D3900956B9D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 			children = (
 				27E7523F2BC6651B006E7CC0 /* MUser.swift */,
 				27E752412BC66530006E7CC0 /* MChat.swift */,
+				27174BB22BE7A198004A67E7 /* MMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				27174B952BE408FF004A67E7 /* UIImage + Extension.swift in Sources */,
 				27AC83022BBC8D4E0051F8C3 /* UIColor + Extension.swift in Sources */,
 				271A60772BBD129900956B9D /* StackView + Extension.swift in Sources */,
+				27174BB32BE7A198004A67E7 /* MMessage.swift in Sources */,
 				2706476D2BBAB67400A8CCE7 /* SceneDelegate.swift in Sources */,
 				273F02022BD5507D008A55F6 /* AuthService.swift in Sources */,
 				271A607D2BBD926900956B9D /* LoginViewController.swift in Sources */,
